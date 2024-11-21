@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="./img/logo/favicon.png">
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="calendar/calendar.css">
+
+        <title>КарMoney</title>
+    </head>
+<body>
+
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav">
+            <img src="./assets/img/logo/logo.png" href="#" class="nav__logo"></img>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link active-link">
+                            <i class='bx bx-id-card nav__icon'></i>
+                            <span class="nav__name">Сотрудники</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="./supplier.html" class="nav__link">
+                            <i class='bx bxs-package nav__icon '></i>
+                            <span class="nav__name">Поставщики</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./messenger.html" class="nav__link">
+                            <i class='bx bxs-chat nav__icon' ></i>
+                            <span class="nav__name">Мессенджер</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./calculator.html" class="nav__link">
+                            <i class='bx bxs-calculator nav__icon' ></i>
+                            <span class="nav__name">Калькулятор</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./adds.html" class="nav__link">
+                            <i class='bx bxs-volume-full nav__icon'></i>
+                            <span class="nav__name">Реклама</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./calendar.html" class="nav__link">
+                            <i class='bx bxs-calendar nav__icon active-link' ></i>
+                            <span class="nav__name">Бизнес календарь</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#">
+                <img src="assets/img/perfil.png" alt="" class="nav__img">
+            </a>
+            
+        </nav>
+    </header>
+
+    <!--=============== MAIN CONTENT ===============-->
+    <main>
+    <div class="calendar-container">
+        <h1 id="calendarTitle">Бизнес Дневник</h1>
+        <div id="calendarHeader" class="calendar-header">
+            <button id="prevMonthBtn" class="month-nav-btn">◀</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonthBtn" class="month-nav-btn">▶</button>
+        </div>
+        <button id="addTaskBtn" class="add-task-btn">Добавить план</button>
+        <div class="days-of-week">
+            <div>Пн</div>
+            <div>Вт</div>
+            <div>Ср</div>
+            <div>Чт</div>
+            <div>Пт</div>
+            <div>Сб</div>
+            <div>Вс</div>
+        </div>
+        <div id="calendarBody" class="calendar-body"></div>
+    </div>
+
+    <!-- Модальное окно для выбранной даты -->
+    <div id="dayModal" class="hidden">
+        <div class="modal-content">
+            <button id="backToCalendarBtn">Назад</button>
+            <h2 id="selectedDate"></h2>
+            <div id="plansList">
+                <h3>Планы на этот день:</h3>
+                <ul id="plans"></ul>
+                <p id="noPlansMessage" class="hidden">Планов нет.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для добавления плана -->
+    <div id="taskModal" class="task-modal hidden">
+        <div class="task-modal-content">
+            <h3>Добавить задачу</h3>
+            <input type="date" id="taskDate" value="">
+            <input type="time" id="taskTime">
+            <input type="text" id="taskTitle" placeholder="Название задачи">
+            <textarea id="taskDescription" placeholder="Описание задачи"></textarea>
+            <button id="saveTask">Сохранить</button>
+            <button id="closeModal">Закрыть</button>
+        </div>
+    </div>
+</main>
+
+    <script src="calendar/calenar.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5e1;
+    margin-top: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.required {
+    color: orange;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.active-linkforbut {
+  position: relative;
+  color: #998484;
+  transition: .3s;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px; */
+}
+
+li button {
+    margin: centr;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Контейнер для поиска */
+.search-container {
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    /* margin-bottom: 20px; */
+}
+
+/* Поле ввода для поиска */
+#search-input {
+    flex: 1; /* Растягивается по ширине */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none; /* Убираем правую границу */
+    border-radius: 5px 0 0 5px; /* Скругление только слева */
+    font-size: 16px;
+    height: 40px; /* Высота поля */
+    box-sizing: border-box; /* Учитываем padding и border */
+}
+
+/* Кнопка поиска */
+#search-btn {
+    padding: 0 15px; /* Горизонтальные отступы */
+    border: 1px solid #ccc;
+    border-left: none; /* Убираем левую границу */
+    background-color: #28a745;
+    color: white;
+    border-radius: 0 5px 5px 0; /* Скругление только справа */
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px; /* Высота кнопки совпадает с полем */
+    display: flex;
+    align-items: center; /* Центровка текста кнопки по вертикали */
+    justify-content: center; /* Центровка текста кнопки по горизонтали */
+    box-sizing: border-box; /* Учитываем padding и border */
+    margin-top: 5px;
+}
+
+#search-btn:hover {
+    background-color: #218838;
+}

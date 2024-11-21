@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff5e1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.active-linkforbut {
+  position: relative;
+  color: #998484;
+  transition: .3s;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.marginforaddslist {
+  margin: 20px;
+}
+button:hover {
+  background-color: #218838;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.required {
+  color: orange;
+}
+
+input, textarea, button[type="submit"], select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+#adsList {
+  list-style: none;
+  padding: 0;
+}
+
+#adsList li {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Дополнительно: Отступы */
+#formContainer h2 {
+  margin-bottom: 20px; /* Отступ между "Создание новой рекламы" и первым полем формы */
+}
+
+#analyticsContainer h2 {
+  margin-bottom: 20px; /* Отступ между "Аналитика рекламы" и выпадающим списком */
+}
+
+#adsContainer h2 {
+  margin-bottom: 20px; /* Отступ между "Опубликованные рекламы" и сообщением об отсутствии */
+}
+
+#noAdsMessage {
+  margin-top: 10px;
+}

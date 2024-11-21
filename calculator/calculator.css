@@ -1,0 +1,111 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff5e1;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Стили для контейнера select */
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.calculator-select {
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 250px;
+}
+
+.calculator-select:hover {
+    border-color: #007bff;
+}
+
+.calculator-select:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.calculator-select option {
+    padding: 10px;
+}
+
+/* Стили для контейнера калькулятора */
+.calculator-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.calculator-container.active {
+    display: block;
+    opacity: 1;
+}
+
+.calculator-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #218838;
+}
+
+.result {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
